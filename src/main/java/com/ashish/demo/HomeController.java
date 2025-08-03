@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-
 public class HomeController {
-    @RequestMapping("/")  // to map the request
+    @RequestMapping("/home")  // to map the request
     public String home(){
         System.out.println("home method called");
         return "index" ;  // we can use index.jsp also but this is more readable
